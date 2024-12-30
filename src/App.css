@@ -1,0 +1,141 @@
+
+/*  App  */
+
+.App {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  width: 100%; 
+  flex-direction: column; 
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.score-container {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.score-container p {
+  margin: 5px 0;
+  color:#000000;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+
+/* Kart (Grid) */
+.card-container {
+  display: grid;
+  gap: 10px;
+  justify-items: center; 
+  align-items: center; 
+  width: 80%;
+  max-width: 900px; 
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); 
+  grid-template-rows: repeat(auto-fill, minmax(80px, 1fr)); 
+  height: auto; 
+}
+
+
+
+/* Bireysel Kart Stilleri */
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-back {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Eşleşmiş Kartlar */
+.matched {
+  background-color: #4CAF50;
+  border: 2px solid #388E3C;
+  cursor: default;
+}
+
+.card.isFlipped {
+  background-color: #e0e0e0;
+}
+
+/* Oyun Sonu */
+.game-over {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #d32f2f;
+}
+
+.game-over button {
+  margin-top: 20px;
+}
+
+.leaderboard-container {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.leaderboard-table {
+  border: 1px solid #ccc;
+  width: 30%;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px 12px;
+}

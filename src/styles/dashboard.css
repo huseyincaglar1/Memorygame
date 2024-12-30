@@ -1,0 +1,51 @@
+
+.dashboard-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .dashboard-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block; 
+    width: auto; 
+  }
+  
+  .leaderboard-container {
+    margin-top: 30px;
+  }
+  
+  .leaderboard-table {
+    margin-bottom: 20px;
+  }
+  
+  .leaderboard-table h2 {
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #f1f1f1;
+  }
+  
